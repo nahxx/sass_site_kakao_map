@@ -1,7 +1,7 @@
 $(function() {
-  console.log($('body'));
-  console.log(window.location.href);
-  console.log($(location).attr('href'));
+  // console.log($('body'));
+  // console.log(window.location.href);
+  // console.log($(location).attr('href'));
   /*
   #lnb의 메뉴와 같은 서브페이지의 주소값을 매칭하여
   해당 메뉴에 on class 추가하기
