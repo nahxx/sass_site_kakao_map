@@ -90,6 +90,9 @@ table {
 }
 
 // swiper {
-.swiper-button-next, .swiper-button-prev, .swiper-pagination {
+.swiper-button-next, .swiper-button-prev {
   color: $gbtnColor;
+}
+.swiper-pagination {
+  background: $gbtnColor;
 }
