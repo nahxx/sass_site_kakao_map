@@ -93,6 +93,9 @@ table {
 .swiper-button-next, .swiper-button-prev {
   color: $gbtnColor;
 }
+.swiper-pagination-bullet {
+  background: $layoutBg;
+}
 .swiper-pagination-bullet-active {
   background: $gbtnColor;
 }
