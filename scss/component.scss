@@ -88,3 +88,8 @@ table {
   text-align: center;
   padding: 6px 0;
 }
+
+// swiper {
+.swiper-button-next, .swiper-button-prev, .swiper-pagination {
+  color: $gbtnColor;
+}
