@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <title>xwood</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.min.css">
     <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
   </head>
   <body>
@@ -41,7 +43,16 @@
       </header>
       <main>
         <!-- 메인 배너 -->
-        <div class="mainbanner"></div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide mainbanner"></div>
+            <div class="swiper-slide mainbanner"></div>
+            <div class="swiper-slide mainbanner"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
         <!-- 컨텐츠 영역 -->
         <div class="container">
           <div class="content">
@@ -128,5 +139,19 @@
         </div>
       </footer>
     </div>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
   </body>
 </html>
